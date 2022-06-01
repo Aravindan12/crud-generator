@@ -2,7 +2,6 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/chillout/crud-generator.svg?style=flat-square)](https://packagist.org/packages/chillout/crud-generator)
 [![Total Downloads](https://img.shields.io/packagist/dt/chillout/crud-generator.svg?style=flat-square)](https://packagist.org/packages/chillout/crud-generator)
-![GitHub Actions](https://github.com/chillout/crud-generator/actions/workflows/main.yml/badge.svg)
 
 This package is mainly created for get a crud files like Controller with basic crud functions, Model, Request file and api resources.By entering crud:generate {name} you will can those file in respective folders. You can modify as u you can.
 
