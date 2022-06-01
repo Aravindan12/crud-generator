@@ -50,5 +50,7 @@
                 "CrudGenerator": "Chillout\\CrudGenerator\\CrudGeneratorFacade"
             }
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
