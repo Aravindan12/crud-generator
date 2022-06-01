@@ -4,7 +4,7 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/chillout/crud-generator.svg?style=flat-square)](https://packagist.org/packages/chillout/crud-generator)
 ![GitHub Actions](https://github.com/chillout/crud-generator/actions/workflows/main.yml/badge.svg)
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
+This package is mainly created for get a crud files like Controller with basic crud functions, Model, Request file and api resources.By entering crud:generate {name} you will can those file in respective folders. You can modify as u you can.
 
 ## Installation
 
@@ -15,9 +15,15 @@ composer require chillout/crud-generator
 ```
 
 ## Usage
-
+ After composer require command of this package
 ```php
-// Usage description here
+ Need to run a command in your terminal 
+    php artisan crud:generate {name}
+ {name} can be replace with your name for example Post,Comment
+
+How it is acheived?
+
+Name you given in the command is get replaced by a dummy name added in the pre-added files.
 ```
 
 ### Testing
