@@ -1,0 +1,11 @@
+<?php
+
+namespace Chillout\CrudGenerator\App\Http\Controllers;
+use App\Http\Controllers\Controller;
+
+class CheckController extends Controller
+{
+    public function test(){
+        return "test";
+    }
+}
