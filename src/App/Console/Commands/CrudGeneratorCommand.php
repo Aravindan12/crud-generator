@@ -44,6 +44,7 @@ class CrudGeneratorCommand extends Command
         $this->controller($name);
         $this->model($name);
         $this->request($name);
+        $this->migration($name);
     
         File::append(base_path('routes/api.php'), 'Route::resource(\'' . Str::plural(strtolower($name)) . "', '{$name}Controller');");
     }
@@ -96,5 +97,16 @@ class CrudGeneratorCommand extends Command
         );
 
         file_put_contents(app_path("/Http/Controllers/{$name}Controller.php"), $controllerTemplate);
+    }
+
+    protected function migration($name)
+    {
+        $migrationTemplate = str_replace(
+            ['{{modelName}}','{{modelNamePluralLowerCase}}',],
+            [Str::plural($name),strtolower(Str::plural($name))],
+            $this->getStub('Migration')
+        );
+        $name = strtolower(Str::plural($name));
+        file_put_contents(base_path("database/migrations/".date('Y_m_d_His')."_create_{$name}_table.php"), $migrationTemplate);
     }
 }
