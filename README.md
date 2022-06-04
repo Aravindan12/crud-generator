@@ -15,16 +15,15 @@ composer require chillout/crud-generator
 
 ## Usage
  After composer require command of this package
+  Need to run a command in your terminal 
 ```php
- Need to run a command in your terminal 
     php artisan crud:generate {name}
- {name} can be replace with your name for example Post,Comment
+```
+{name} can be replace with your name for example Post,Comment
 
 How it is acheived?
 
 Name you given in the command is get replaced by a dummy name added in the pre-added files.
-```
-
 ### Testing
 
 ```bash
